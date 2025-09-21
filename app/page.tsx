@@ -22,7 +22,6 @@ const SettingsPage = async () => {
 			</div>
 
 			<Tabs defaultValue="theme" className="grid grid-cols-1 gap-6 xl:grid-cols-4">
-				{/* Sidebar */}
 				<div className="space-y-6 xl:col-span-1">
 					<Card>
 						<CardContent className="p-0">

@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Navbar from "@/components/layout/Navbar";
 import ThemeProvider from "@/components/providers/ThemeProvider";
 import { fontMap, getAllFontVariables } from "@/lib/fonts";
 import { getSelectedColorScheme, getSelectedFont } from "@/lib/server/settings-helpers";
@@ -17,7 +18,13 @@ const RootLayout = async ({ children }: WrapperProps) => {
 			className={`${allFontVariables} ${selectedColorScheme}`}
 		>
 			<body className={`antialiased ${selectedFontConfig.className}`}>
-				<ThemeProvider>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="dark"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<Navbar />
 					{children}
 				</ThemeProvider>
 			</body>
