@@ -16,7 +16,7 @@ import {
 	SelectValue,
 } from "@/components/ui/select";
 import usePagination from "@/hooks/pagination/usePagination";
-import { usePaginationState } from "@/hooks/pagination/usePaginationState";
+import usePaginationState from "@/hooks/pagination/usePaginationState";
 import type { CustomPaginationProps } from "@/types";
 import TooltipWrapper from "~/TooltipWrapper";
 

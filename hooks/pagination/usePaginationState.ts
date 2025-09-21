@@ -5,7 +5,7 @@ interface UsePaginationStateOptions {
 	defaultPage?: number;
 }
 
-export const usePaginationState = ({
+const usePaginationState = ({
 	defaultPageSize = 12,
 	defaultPage = 1,
 }: UsePaginationStateOptions = {}) => {
@@ -46,3 +46,5 @@ export const usePaginationState = ({
 		setPageSize,
 	};
 };
+
+export default usePaginationState;
